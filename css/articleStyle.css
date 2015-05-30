@@ -1,0 +1,47 @@
+/*****Global******/
+body{
+	padding-top: 3%;
+	background: url(image.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+/****Typographic****/
+
+*{
+	font-family: "Courier", sans-serif;
+}
+
+.panel-title{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+.lead{
+	text-align: left;
+	padding-left: 2%;
+}
+
+/*****Info column******/
+.col-lg-6{
+	background-color: rgba(250,245,249,0.7);
+}
+/*****Navbar*****/
+.subMenu{
+	position: absolute;
+	top: 462px;
+	height: 80px;
+	z-index: 1000;
+	width: 100%;
+	max-width: 1150px;
+	min-width: 960px;
+}
+.container nav{
+	background: rgba(250,245,249,0.9);
+	font-family: Courier;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}

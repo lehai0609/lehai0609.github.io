@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Le Hai's Personal Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <!-- Font-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <!--Script-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!--Smint-->
+    <script type="text/javascript" src="js/jquery.smint.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpquC0Hazl_KRhFRgDijgw1IErS4qCvA4&sensor=true"></script>
+    <script type="text/javaScript">
+        window.onload = function() {
+            setTimeout (function () {
+            scrollTo(0,0);
+            }, 0);
+        };
+        
+        google.maps.visualRefresh = true;
+        var map;
+        function initialize() {
+          var myLatlng = new google.maps.LatLng(21.04, 105.789);
+          var mapOptions = {
+            zoom: 16,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          map = new google.maps.Map(document.getElementById('map-canvas'),
+              mapOptions);
+
+          var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title:"No 4 - Back Street 1/24 - Tran Quoc Hoan Str - Cau Giay Dist - Hanoi"
+          })
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+        $(document).ready(function(){
+            $(".subMenu").smint({
+                "scrollSpeed": 1000
+            });
+        });
+    </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body onunload="">
+    <div class="container">      
+        <!--Navigation-->
+        <div class="subMenu">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="#" id="aboutMe">About me</a></li>
+                <li><a href="#" id="skills">Skills</a></li>
+                <li><a href="#" id="blog">Blog</a></li>
+                <li><a href="#" id="portfolio">Portfolio</a></li>
+                <li><a href="#" id="contact">Contact Me</a></li>
+            </ul>
+            </div>
+        </nav>
+        </div>
+        <!--About Me-->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="aboutMe">
+                <div class="info">
+                    <h2>Objective</h2>
+                    <p>I'm a dedicated and quantitative person. I work and live based on facts and figures. My lifetime purpose is to become a figure for our generation in Vietnam in term of innovation and business leadership. In order to achieve that, I will established three start-ups. The first one is already under construction. Bear with me!</p>
+                </div>
+                </div>
+                <div class="info">
+                    <h2>Experience</h2>
+                    <div class="entry">
+                        <h3>Cordia (Services) LLP <small>Glasgow, United Kingdom</small></h3>
+                        <p>Working as a freelance interpreter for Cordia Linguistics, operated in various settings such as health service, social work, police and legal services.</p>
+                        <h3>KPMG Vietnam Ltd <small>Hanoi, Vietnam</small></h3>
+                        <p>Performed various auditing cycles such as fixed asset, wages and salary etc ... as part of our audit team.</p>
+                        <h3>Grant Thornton Vietnam Ltd <small>Hanoi, Vietnam</small></h3>
+                        <p> I worked as a member of the audit team and perform various tasks under the supervision of my mentor.</p>
+                    </div>
+                </div>
+                
+                <div class="info">
+                    <h2>Education</h2>
+                    <div class="entry">
+                        <h3>University of Strathclyde <small>Glasgow, United Kingdom</small></h3>
+                        <p>Major in Business Analysis and Consulting, graduated in November 2013. Performed an apprenticeship in England Department of Health. Member of 2nd tennis team and captain of Vietnam Student in Scotland football team</p>
+                        <h3>The Academy of Finance <small>Hanoi, Vietnam</small></h3>
+                        <p>Graduated in June 2011, specialised in Corporate Finance. Achieved 2nd Award in 2010 Academy's Annual Scienctific Research. Class monitor in 4 consecutive years.</p>
+                    </div>
+                </div>
+                <br>
+        <!--Skills-->
+                <p class="lead">You can download my full resume from <a href="HaiLe.pdf">here</a></p>
+                <br>
+
+                <div class="skills">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <h3>Microsoft Excel</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                        </div>
+                    </div>
+                    <h3>HTML, CSS3, Javascript</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                        </div>
+                    </div>
+                    <h3>R, SPSS</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                        </div>
+                    </div>
+                    <h3>Photoshop</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        <!--Blog-->
+            <div class="blog">
+                <h2>Blog</h2>
+                <h3><a href="giao-duc-viet-nam.html">Giải pháp duy nhất cho nền giáo dục Vietnam</a></h3>
+                <h3><a href="chan-di-voi-dau.html">Cái chân có khỏe thì cái đầu mới thông.</a></h3>
+                <h3><a href="Ronaldo-va-qua-bong-vang.html">Ronaldo và Quả bóng vàng</a></h3>
+                <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
+                <br>
+            </div>
+        <!--Portfolio-->
+            <div class="portfolio">
+                <h2>Portfolio</h2>
+                <h3><a href="http://bit.ly/11HTaB9">The Vietnam Discovery Day 2013 Poster</a></h3>
+                <p>This was part of advertising campaign for the first ever Vietnamese culture day in Scotland, requested by Vietnam Embassy in United Kingdom</p>
+                <h3><a href="https://db.tt/FHYnmuSC">The HotandCold Game</a></h3>
+                <p>Part of my web design front end development study.</p>
+                <h3><a href="http://lehai0609.github.io/ShoppingListApp/">The Shopping List</a></h3>
+                <p>My first ever web app</p>
+                <h3><a href="http://lehai0609.github.io/QuizApp/">The Quiz App</a></h3>
+                <p>Test your knowledge about Vietnam</p>
+                <h3><a href="http://lehai0609.github.io/ApiHack/">Where is the gas station App</a></h3>
+                <p>Plan your trip with Google Maps API</p>
+                <p></p>
+                <br>
+            </div>
+        <!--Contact Me-->
+        <div class="contact">
+                <h2>Contact me</h2>
+        </div>
+            <!--Maps-->
+                <div id='map-canvas'></div>
+            <!--Contact Details-->
+            <p><strong>Address:</strong>No 4 - Back Street 1/24 - Tran Quoc Hoan Street - Cau Giay Dist - Hanoi - Vietnam </p>
+            <p><strong>Phone No:</strong>+44-966267566</p>
+            <p><strong>Email:</strong> lehai0609@gmail.com</p>
+            <!--Form-->
+            <h3>Send me a message</h3>
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="inputName3" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputName3" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                
+                        <textarea rows="10" cols="76" placeholder="Message" autofocus style="margin-bottom:2%"></textarea>
+                
+                    <div class="form-group">
+                        <div class="col-sm-offset-10 col-sm-10">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+<!--Social Media Icon-->
+            <h3>Connect with me</h3>
+                <div class="socialmediaicon">
+                    <a href="https://twitter.com/lehai0609" target="_blank" align="left"><img src="http://www.niftybuttons.com/webicons2/twitter.png"></a><a href="http://www.youtube.com/user/lehai0609" target="_blank" align="left"><img src="http://www.niftybuttons.com/webicons2/youtube.png"></a><a href="http://www.linkedin.com/in/haiqle" target="_blank" align="left"><img src="http://www.niftybuttons.com/webicons2/linkedin.png"></a><a href="http://www.flickr.com/photos/35814783@N02/" target="_blank" align="left" ><img src="http://www.niftybuttons.com/webicons2/flickr.png"></a>
+                </div>
+                <br>
+            <p>&#169 Manually coded by Le Quang Hai</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
